@@ -6,5 +6,40 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 4: Conditional Execution</h1>
+		<br>
+		<h2>If/else statements</h2>
+		<ul>
+			<li>A conditional is something that executes only when the statement is sometimes true</li>
+			<li>If it is true then the next block of statements will execute. If false, then the block of statements is skipped.</li>
+			<li>There are more than two parts: if and else. However, remember that there are three parts that make up this conditional statement: if, else if, and else.</li>
+		</ul>
+		<h2>Cumulative algorithms</h2>
+		<ul>
+			<li>A cumulative algorithm is an operation in which an overall value is computed incrementally, often using a loop</li>
+			<li>Cumulative sums help increase a sum by a certain variable <br>
+					For example: sum = sum + next or sum += next;</li>
+			<li>If statements can also be used in cumulative statements.</li>
+			<li>Roundoff errors occur when floating-point numbers are used because they are stored as approximations rather than exact values.<br>
+					Using “import java.math.BigDecimal” will help solve the error because the BigDecimal class can handle very large and very small floating point numbers with great precision but it would take a little longer to compute and run
+					<br>BigDecimal premium = BigDecimal.valueOf(1586.6d);</li>
+		</ul>
+		<h2>Text processing</h2>
+		<ul>
+			<li>It is the editing and processing of strings of text.</li>
+			<img src="stringvschar.jpg" alt="" />
+			<li>The char type is a primitive type which represents a single character of a text.</li>
+			<li>It uses up small amounts of memory and doesn’t have any methods.
+			<br> For example: char ch = 'A';</li>
+			<li>The characters of a String are stored inside the object as values of type char.</li>
+			<li>Char values are stored as 16 bit integers and Java automatically converts char to int when it’s expecting an int.<br>They can be compared by using relational operators (< or ==)</li>
+			<img src="4_5.jpg" alt="" />
+		</ul>
+
+		<h2>Methods with conditional execution</h2>
+		<ul>
+			<li>Throwing exceptions<br>Since exceptions are for objects, before you throw an exception, you must construct an exception object using new.<br>The exception object has information about what happened when the error occurred. There’s a class called IllegalArgumentException that covers cases where someone has passed an inappropriate value as an argument.</li>
+		</ul>
+	</body>
 </html>
