@@ -9,11 +9,25 @@
 		<br>
 		<h1>Chapter 1: Intro to Java</h1>
 		<br>
-		<h2>Naming java files</h2>
+		
+		<h2>Basic computing concepts</h2>
+		<ul>
+			<li>Algorithm: step-by-step description of how to accomplish a task</li>
+			<li>Program: list of instructions to be carried out by a computer</li>
+			<li>Digital: based on numbers that increase in discrete increments, such as integers</li>
+			<li>Binary number: number composed of just 0s and 1s, AKA base-2 numbers</li>
+			<li>Program execution: act of carrying out instructions contained in a program</li>
+			<li>Compiler: program that translates a program you wrote into another language sp that the computer can read the program</li>
+			<li>Java Virtual Machine (JVM): a theoretical computer whose machine language is the set of Java bytecodes</li>
+			<li>Java runtime: program that executes compiled Java bytecodes</li>
+		</ul>
+
+		<h2>Naming Java files</h2>
 		<ul>
 			<li>Always name files starting with capital letters</li>
 			<li>Class names are always the same as file names</li>
 		</ul>
+
 		<h2>Good programming style</h2>
 		<ul>
 			<li>Put class and method headers on lines by themselves</li>
@@ -21,12 +35,13 @@
 			<li>Indent properly</li>
 				<ul>
 					<li>When opening brace appears, increase indentation 
-						of the lines that follow it.</li> 
-					<li>When closing brace appears, reduce indentation.</li>
-					<li>Indent using 4 spaces.</li>
+						of the lines that follow it</li> 
+					<li>When closing brace appears, reduce indentation</li>
+					<li>Indent using 4 spaces</li>
 				</ul>
 			<li>Use blank lines to separate parts of the program(e.g. methods)</li>
 		</ul>
+
 		<h2>Most common escape sequences</h2>
 		<ul>
 			<li>tab character:		\t</li>
@@ -34,8 +49,32 @@
 			<li>quotation mark:		\"</li>
 			<li>backslash character:		\\</li>
 		</ul>
+
 		<h2>Common programming/syntax errors</h2>
 		<ul>
 			<li>Statements must <strong>ALWAYS</strong> end with ";"</li>
+			<li>Quotations, parentheses, brackets should <strong>ALWAYS</strong> be in <em>pairs</em></li>
+			<li>Avoid using Java keywords when naming variables found on pg20</li>
+		</ul>
+
+		<h2>Static methods</h2>
+		<ul>
+			<li>Static method: a block of Java statements that is given a name</li>
+			<ul>
+				<li>Ex.: public static void methodName(){}</li>
+				<ul>
+					<li><em>public</em> indcates this method is available to be used by all parts of your program</li>
+					<li><em>static</em> indcates that this method can be called without first creating an instance object (more details in Chapter 8)</li>
+					<li><em>void</em> indicates this method executes statements but does not produce any value</li>
+				</ul>
+			</ul>
+			<li>Method call: a command to execute another method, which causes all statements inside that method to execute</li>
+			<ul>
+				<li>Methods can also call other methods</li>
+				<ul>
+					<li>But having a static method calling itself can create a runtime error</li>
+				</ul>
+			</ul>
+
  	</body>
 </html>
