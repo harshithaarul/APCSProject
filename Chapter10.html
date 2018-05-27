@@ -6,5 +6,34 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 10: ArrayLists</h1>
+		<br>
+		<h2>ArrayLists</h2>
+		<ul>
+			<li>Internally, each ArrayList object uses an array to store its values. As a result, an ArrayList provides the same fast random access as an array. But unlike with an array, with an ArrayList you can make simple requests to add or remove values, and the ArrayList takes care of all of the details for you: If you add values to the list it makes the array bigger, and if you remove values it handles any shifting that needs to be done.<li>
+			<li> In the API documentation for ArrayList, the syntax is actually listed as ArrayList(E). which is an example of a generic class in Java. It takes a type parameter to indicate what kind of values it will use.<br>
+				The “E” is short for “Element,” and it indicates the type of elements that will be included in the ArrayList. Generic classes are similar to parameterized methods.</li>
+			<img src="10_1.jpg" alt="" /><br><br>
+			<img src="10_2.jpg" alt="" />
+			<li>The E in ArrayList<E> can be filled in with any object or reference type. The primitive types cannot be used as type parameters for an ArrayList. Instead, Java defines a series of wrapper classes that allow you to store primitive data as objects.</li>
+			<li>Boxing is the automatic conversion from primitive data to a wrapped object of the appropriate type</li>
+			<li>Unboxing is the automatic conversion from a wrapped object to its corresponding primitive data.</li>
+			<img src="10_3.jpg" alt="" />
+		</ul>
+		<h2>The Comparable Interface</h2>
+		<ul>
+		<li>Natural Ordering is the order imposed on a type by its comparison function</li>
+		<li>Java has a convention for indicating the natural ordering of a type. Any type that has such an ordering should implement the Comparable interface:<br>
+				public interface Comparable(T) {<br>
+				public int compareTo(T other);<br>
+			}<br></li>
+		<li>The convention for compareTo is that an object should return one of the following results:<br>
+ 				A negative number to indicate a less-than relationship<br>
+ 				0 to indicate equality<br>
+ 				A positive number to indicate a greater-than relationship</li>
+				<img src="10_4.jpg" alt="" />
+		<li>We have to replace the (T) in Comparable(T). Whenever you implement Comparable, you compare pairs of values from the same class.</li>
+		</ul>
+	</body>
 </html>
