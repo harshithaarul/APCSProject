@@ -6,5 +6,51 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 6: File Processing</h1>
+		<br>
+		<h2>File-Reading Basics</h2>
+		<ul>
+			<li>Files can be text files or binary files depending on the format.<br>Text files can be edited using text editors. Binary files are stored using
+an internal format that requires special software to process. </li><br><br>
+			<img src="6_1.jpg" alt="" /><br><br>
+			<li>You construct a File object by the line of code:<br>
+					File f = new File("hamlet.txt");</li>
+			<li>Once the object is constructed, the following methods will be called to manipulate the file. </li><br><br>
+			<img src="6_2.jpg" alt="" /><br><br>
+			<li>The following line of code instructs the computer to construct a Scanner that reads from
+					the console<br>Scanner console = new Scanner(System.in);</li>
+			<li>Checked Exception is an exception that must be caught or specifically declared in the header of
+					the method that might generate it </li>
+		</ul>
+		<h2>Details of Token-Based Processing</h2>
+		<ul>
+			<li>Token based processing is processing input token by token (i.e., one word at a time or one number at
+					a time)</li>
+			<li>For the computer, each file is just a one-dimensional sequence of characters <br>
+				This sequence is how the computer views the file: as a one-dimensional sequence
+				of characters including special characters that represent “new line”.<br>
+				308.2 14.9 7.4\n2.8\n\n\n3.9 4.7 -15.4\n2.8\n</li>
+			<li>File Path is a description of a file’s location on a computer, starting with a drive and including the path from the root directory to the directory where the file is stored</li>
+			<li>Current Directory (Working Directory) is the directory that Java uses as the default when a program uses a simple file name.</li>
+		</ul>
+		<h2>Line-Based Processing</h2>
+		<ul>
+			<li>Line-Based Processing is the practice of processing input line by line (i.e., reading in entire lines of input at a time)<br>
+				You can use the nextLine and	hasNextLine methods of the Scanner object<br>
+				Scanner input = new Scanner( new File("poem.txt"));<br>
+				while (input.hasNextLine()) {<br>
+			 	String text = input.nextLine();</li>
+			<li>When a file requires a combination of line-based and token-based processing, you can construct a String-based Scanner for each line of the input file</li>
+			<li>if you have a file composed of n lines of input, you end up constructing n + 1 different Scanner objects–one for each of the n individual lines  and one extra Scanner that is used to process the overall file line by line.</li>
+		</ul>
+
+		<h2>Advanced File Processing</h2>
+		<ul>
+			<li>System.out is a variable that stores a reference to an object of type PrintStream. The print and println statements are part of the PrintStream class. The variable System.out stores a reference to a special PrintStream object that is tied to the console window. However, you can construct other PrintStream objects that send their output to other places.<br>
+				  For example, if you want to send output to a file called results.txt. You can construct a PrintStream object as follows:<br>
+					PrintStream output = new PrintStream(new File("results.txt"));</li>
+					<li>The File class has a method called canRead that you can use to test whether a file exists and can be read. You can print an error message each time the file can’t be read, until you get a good file name.</li>
+		</ul>
+	</body>
 </html>

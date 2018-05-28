@@ -6,5 +6,56 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 8: Classes</h1>
+		<br>
+		<h2>Object-Oriented Programming</h2>
+		<ul>
+			<li>Object-Oriented Programming (OOP) is Writing programs as a set of objects rather than as a set of actions.<br>
+			<li>Classes serve as blueprints for new types of objects. To create a new type of object in Java, we must create a class and add code to it that specifies the following elements:<br>
+ 					The state stored in each object<br>
+ 					The behavior each object can perform<br>
+ 					How to construct objects of that type</li>
+			<li>Created objects are instances of the class because one class can be used to construct many objects. </li>
+			<li> A Point object stores the (x, y) coordinates of a position in twodimensional space. These coordinates are expressed as integers, although there are variations for storing points using floating-point numbers.</li>
+			<img src="8_1.jpg" alt="" />
+		</ul>
+		<h2>Object State and Behavior</h2>
+		<ul>
+			<li>Field is a variable inside an object that makes up part of its internal state.</li>
+			<li>A cumulative algorithm is an operation in which an overall value is computed incrementally, often using a loop</li>
+			<li>Behavior of objects is specified by writing instance methods which describe the messages to which that object can respond.</li>
+			<li>There are two types of methods:<br>
+				Mutator methods:An instance method that modifies the object’s internal state.It is a common convention for a mutator method’s name to begin with “set,” as in setID or setTitle. Usually, a mutator method has a void return type. Mutators accept parameters that specify the new state of the object or the amount by which to modify the object’s current state.<br>
+				Accessor: An instance method that provides information about the state of an object without modifying it. Examples of accessor methods include the length and substring methods of String objects and the exists method of File objects.</li>
+			<li>The toString Method<br>
+				When an object is being printed an object or a String is being concatenated, the program calls a toString method to convert the object into a String. <br>
+				It is an instance method that returns a String representation of the object. It accepts no parameters and has a String return type:<br>
+				public String toString() {<br>
+					code to produce and return the desired string; <br>
+				}<br>
+				If a toString method isn't in your class, your class will use a default version that returns the class name followed by an @ sign and some letters and numbers related to the object’s address in memory. If you define your own toString method, it replaces this default version.</li>
+		</ul>
+		<h2>Object Initialization:Constructors</h2>
+		<ul>
+			<li>The initial state of objects is specified by writing constructors(piece of code that initializes the state of new objects as they are created).</li>
+			<li>The constructor executes when the client uses the new keyword to create a new object and parameters must be specified when a enw object is created. </li>
+			<li>A constructor’s header begins with the keyword public, followed by the class’s name and any parameters. It looks like a method header with the same name as the class, except that you do not specify a return type. </li>
+			<li>A constructor often has parameters that specify the object’s initial state. </li>
+			<li>When a class doesn’t have a constructor, as in our previous versions of the Point class, Java automatically supplies a default constructor with no parameters. </li>
+			<li>Constructors aren’t supposed to have return types. When you write a return type such as void, you have created a normal instance method with void return type. </li>
+			<li>A class can have multiple constructors to provide multiple ways for clients to construct objects of that class. Each constructor must have a different signature (i.e., number and type of parameters).</li>
+			<li>The keyword "this" allows you to refer to the implicit parameter inside a class.
+			<br>The general syntax for using the keyword this to refer to fields is<br>
+					this. (field name) <br>
+					Similarly, when you call an instance method you’re using shorthand for a call of this.method. The longer form has the following general syntax:<br>
+					this. (method name)( (expression), ... , (expression));</li>
+		</ul>
+
+		<h2>Encapsulation</h2>
+		<ul>
+			<li>Encapsulation is hiding the implementation details of an object from the clients of the object.</li>
+			<li>When an object is properly encapsulated, its clients cannot directly access or modify its internal workings. Encapsulation leads to abstraction; an encapsulated object presents a more pure abstraction than one that has data which can be accessed directly. Declaring fields private encapsulates the state of the object.</li>
+		</ul>
+	</body>
 </html>
