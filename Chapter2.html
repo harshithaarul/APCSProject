@@ -32,12 +32,39 @@
 			<ul>
 				<li>Java operator precedence:</li>
 				<ul>
-					<li>Unary operators   +, -</li>
-					<li>Multiplicative operators   *, /, %</li>
-					<li>Additive operators   +, -</li>
+					<li>Unary operators:  &nbsp; +, -</li><!-- &nbsp non-breaking space--> 
+					<li>Multiplicative operators:  &nbsp; *, /, %</li>
+					<li>Additive operators: &nbsp;  +, -</li>
+				</ul>
+				<li>The use of parentheses can force a certain evaluation</li>
+				<ul>
+					<li>Ex.: (4&nbsp; + &nbsp;5) &nbsp;* &nbsp;-5 &nbsp;= &nbsp;-45 instead of  -21</li>
 				</ul>
 			</ul>
 		</ul>
+
+		<h2>Mixing types and casting</h2>
+		<ul>
+			<li>Evaluate these expressions:</li>
+			<ul>
+				<li>23.0 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5.75</li>
+				<li>23 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5</li>
+				<li>23 / 4. = &nbsp;&nbsp;&nbsp;&nbsp; // 5.75</li>
+				<li>(int) 23.0 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5</li>
+				<li>(int) (23.0 / 4) = &nbsp;&nbsp; // 5</li>
+				<li>(char) (250 / 3) = &nbsp;&nbsp; // S</li>
+			</ul>
+		</ul>
+
+		<h2>Increment/decrement operators</h2>
+		<ul>
+			<li>Special assignment characters:</li>
+			<ul>
+				<li>x&nbsp;+=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;+&nbsp;1;</li>
+				<li>x&nbsp;-=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;-&nbsp;1;</li>
+				<li>x&nbsp;*=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;*&nbsp;1;</li>
+				<li>x&nbsp;/=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;/&nbsp;1;</li>
+				<li>x&nbsp;%=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;%&nbsp;1;</li>
 
 	</body>
 </html>
