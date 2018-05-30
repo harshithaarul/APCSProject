@@ -6,5 +6,81 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 2: Primitive Data and Definite Loops</h1>
+		<br>
+
+		<h2>Data types</h2>
+		<ul>
+			<li>Data type: name for a category of data values that are all related, as in type int (used to represent integer values)</li>
+			<ul>
+				<li>Primitive types: boolean, byte, char, double, float, int, long, short</li>
+				<ul>
+					<li>What is the difference between types float and double?</li>
+					<ul>
+						<li>float can handle about 7 decimal places whereas double can handle about 16 decimal places. Type double gives you more precision.</li>
+						<li>float is represented in 32 bits, with 1 sign bit while double is represented in 64 bits, with 1 sign bit.</li>
+					</ul>
+				<li>Objects: string, point</li>
+				</ul>
+			</ul>
+		</ul>
+
+		<h2>Rules of precedence</h2>
+		<ul>
+			<li>Precedence: binding power of an operator, which determines how to group parts of an expression</li>
+			<ul>
+				<li>Java operator precedence:</li>
+				<ul>
+					<li>Unary operators:  &nbsp; +, -</li><!-- &nbsp non-breaking space--> 
+					<li>Multiplicative operators:  &nbsp; *, /, %</li>
+					<li>Additive operators: &nbsp;  +, -</li>
+				</ul>
+				<li>The use of parentheses can force a certain evaluation</li>
+				<ul>
+					<li>Ex.: (4&nbsp; + &nbsp;5) &nbsp;* &nbsp;-5 &nbsp;= &nbsp;-45 instead of  -21</li>
+				</ul>
+			</ul>
+		</ul>
+
+		<h2>Mixing types and casting</h2>
+		<ul>
+			<li>Evaluate these expressions:</li>
+			<ul>
+				<li>23.0 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5.75</li>
+				<li>23 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5</li>
+				<li>23 / 4. = &nbsp;&nbsp;&nbsp;&nbsp; // 5.75</li>
+				<li>(int) 23.0 / 4 = &nbsp;&nbsp;&nbsp;&nbsp; // 5</li>
+				<li>(int) (23.0 / 4) = &nbsp;&nbsp; // 5</li>
+				<li>(char) (250 / 3) = &nbsp;&nbsp; // S</li>
+			</ul>
+		</ul>
+
+		<h2>Increment/decrement operators</h2>
+		<ul>
+			<li>Special assignment characters:</li>
+			<ul>
+				<li>x&nbsp;+=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;+&nbsp;1;</li>
+				<li>x&nbsp;-=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;-&nbsp;1;</li>
+				<li>x&nbsp;*=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;*&nbsp;1;</li>
+				<li>x&nbsp;/=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;/&nbsp;1;</li>
+				<li>x&nbsp;%=&nbsp; 1; &nbsp;&nbsp;→&nbsp;&nbsp; x &nbsp; = &nbsp;x&nbsp;%&nbsp;1;</li>
+			</ul>
+			<br>
+			<li>What is the difference between x++ and ++x?</li>
+			<ul>
+				<li>++x is known as preincrement. This means that 1 is added to x before any operations or comparisons is carried out.</li>
+				<li>x++ is known as postincrement. This means that 1 is added to x after any operations or comparisons is carried out.</li>
+				<li>Ex.: int x = 8; 
+					<br>
+					System.out.println(x++); &nbsp;&nbsp; // prints 8 but x &nbsp; = &nbsp; 9
+					<br>
+					int a = 8; 
+					<br>
+					System.out.println(++a); &nbsp;&nbsp; // prints 9 and a &nbsp; = &nbsp; 9
+				</li>
+
+		</ul>
+
+	</body>
 </html>
