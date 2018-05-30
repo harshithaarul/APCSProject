@@ -6,5 +6,107 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
+		<br>
+		<h1>Chapter 3: Introduction To Parameters and Objects</h1>
+		<br>
+
+		<h2>Parameters</h2>
+		<ul>
+			<li>Parameter (Parameterize): any set of characteristics that distinguish different members of a family of tasks. To parameterize a task it to identity a set of its parameters.</li>
+			<li>Format of passing parameters:</li>
+			<ul>
+				<li>Ex.: public static void methodName(type parameter){}</li>
+			</ul>
+			<li>Method call: &nbsp;&nbsp;methodName(type name);</li>
+			<li>Formal parameter: variable that appears inside parentheses in the header of a method that is used to generalize the method's behavior</li>
+			<ul>
+				<li>Ex.: public static void name(<strong>int a</strong>)</li>
+			</ul>
+			<li>Actual parameter: specific value or expression that appears inside parentheses in a method call</li>
+			<ul>
+				<li>Ex.: name(<strong>9</strong>);</li>
+			</ul>
+			<li>When a parameter is set up, a local variable is created and initialized to the value of the actual parameter. Since it is a local variable, it can't influence any variables outside the method</li>
+			<ul>
+				<li>See pg144 for an example</li>
+			</ul>
+		</ul>
+
+		<h2>Different types of methods</h2>
+		<ul>
+			<li>Method signature: name of a method, along with its number and type of parameters</li>
+			<ul>
+				<li>Ex.: public static void <strong>name(String word)</strong></li>
+			</ul>
+			<li>Overloading methods: ability to define two or more methods with same name but different method signatures</li>
+			<ul>
+				<li>Acceptable method signatures</li>
+				<ul>
+					<li>p.s.v. name(int a, double b)</li>
+					<li>p.s.v. name(String a)</li>
+					<li>p.s.v. name(double a, int b)</li>
+				</ul>
+			</ul>
+			<li>Methods that return values</li>
+			<ul>
+				<li>Return: send a value out as the result of a method that can be used in an expression</li>
+				<ul>
+					<li>Void methods do not return any value</li>
+				</ul>
+				<li>Ex.: public static <strong>double</strong> sqrt(double n)</li>
+				<ul>
+					<li>double is the return type</li>
+				</ul>
+			</ul>
+		</ul>
+
+		<h2>Type casting</h2>
+
+		<h2>Classes and objects</h2>
+		<ul>
+			<li>Class: program entity that represents either a program or a type of object</li>
+			<ul>
+				<li>Program: your HelloWorld program</li>
+				<li>Object: Math class</li>
+			</ul>
+			<li>Object: entity that combines data and behavior</li>
+			<ul>
+				<li>Object-oriented programming (OOP): programs that perform their behavior as interactions between objects</li>
+				<li>Data: variables inside the object (i.e. values, strings)</li>
+				<li>Behavior: methods inside the object</li>
+			</ul>
+			<li>Constructing an object:</li>
+			<ul>
+				<li>Type objectName = new Type(parameters);</li>
+				<li>Ex.: Scanner console = new Scanner(System.in);</li>
+			</ul>
+			<li>Calling an object's method</li>
+			<ul>
+				<li>objectName.methodName(parameters);</li>
+				<li>Ex.: console.hasNext();</li>
+			</ul>
+		</ul>
+
+		<h2>Strings</h2>
+		<ul>
+			<li>Characters of a string numbered with 0-based indices</li>
+			<li>First characer's index: &nbsp; 0</li>
+			<!-- String methods -->
+		</ul>
+
+		<h2>Scanner class</h2>
+		<ul>
+			<li>Can read files, websites, databases, etc.</li>
+			<li>Found in the java.util package</li>
+			<ul>
+				<li>import java.util.*; </li>
+				<li>Importing packages must occur before public class header</li>
+			</ul>
+			<!-- Scanner methods -->
+			<li>Token: a unit of user input, as read by the Scanner</li>
+			<ul>
+				<li>Separated by whitespace (spaces, tabs, new lines)</li>
+			</ul>
+		</ul>
   </body>
 </html>
