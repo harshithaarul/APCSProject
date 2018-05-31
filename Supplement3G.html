@@ -6,5 +6,41 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
+		<br>
+		<h1>Supplement 3G Graphics</h1>
+		<br>
+
+		<h2>Drawing panel</h2>
+		<ul>
+			<li><a href="http://www.buildingjavaprograms.com/code-files/4ed/DrawingPanel.java">DrawingPanel class link</a></li>
+			<li>Graphics belongs to a package named Abstract Window Toolkit (AWT)</li>
+			<li>Pixel: single small dot on a computer screen</li>
+			<li>Graphical objects</li>
+			<ul>
+				<li>DrawingPanel: window on the screen</li>
+				<li>Graphics: a "pen" to draw shapes and lines on a window</li>
+				<li>Color: colors in which to draw shapes</li>
+				<li>To create a window:</li>
+				<ul>
+					<li>DrawingPanel <strong>name</strong> = new DrawingPanel(<strong>width</strong>, <strong>height</strong>);</li>
+					<li>Ex.: DrawingPanel panel = new DrawingPanel(300, 200);</li>
+				</ul>
+				<li>To access graphics:</li>
+				<ul>
+					<li>Graphics g = panel.getGraphics();</li>
+				</ul>
+				<li>Drawing shapes:</li>
+				<ul>
+					<li>g.fillRect(10, 30, 60, 35);
+					<br>
+						g.fillOval(80, 40, 50, 70);</li>
+				</ul>
+			</ul>
+			<li>Java class libraries: classes included with Java's JDK</li>
+			<ul>
+				<li>Import declaration: import pacakageName.*;</li>
+				<li>Import declarations must be placed above the line before the public class header</li>
+				<li>Graphics belongs to a package named java.awt</li>
+		</ul>
   </body>
 </html>
