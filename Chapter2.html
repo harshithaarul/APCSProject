@@ -79,8 +79,103 @@
 					<br>
 					System.out.println(++a); &nbsp;&nbsp; // prints 9 and a &nbsp; = &nbsp; 9
 				</li>
-
+			</ul>
 		</ul>
 
+		<h2>For loops</h2>
+		<ul>
+			<li>for loop syntax:</li>
+			<ul>
+				<li>for(initialization; test; update){}</li>
+			</ul>
+			<li>What is the output?</li>
+			<ol>
+				<li>for(int i = 1; i <= 3; i++){
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("hello");
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					System.out.println("world");
+					<br>
+					}
+				</li>
+				<li>for(int i = 1; i <= 3; i++)
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					System.out.println("hello");
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					System.out.println("world");
+				</li>
+				<li>for(int i = 1; i <= 3; i++){
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					for(i = 1; i < 3; i++){
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					System.out.print(i + " ");
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+					<br>
+					}
+				</li>
+			</ol>
+			&nbsp;&nbsp;&nbsp;Answers:
+			<br>
+			<ol>
+				<li>hello
+					<br>
+					world
+					<br>
+					hello
+					<br>
+					world
+					<br>
+					hello
+					<br>
+					world
+					</li>
+					<br>
+				<li>hello
+					<br>
+					hello
+					<br>
+					hello
+					<br>
+					world
+				</li>
+				<br>
+				<li>This is an infinite loop. It will print 1s and 2s infinitely.
+			</ol>
+		</ul>
+
+		<h2>Scope</h2>
+		<ul>
+			<li>Scope: part of a program in which a particular declaration is valid</li>
+			<li>Local variable: variable declared inside a method that is accessible only in that method</li>
+			<li>Localizing variables: declaring variables in the innermost (most local) scope possible</li>
+		</ul>
+
+		<h2>Class constants</h2>
+		<ul>
+			<li>Class constant: name value that <strong>cannot</strong> be changed. Can be accessed <strong>anywhere</strong> in the class.</li>
+			<li>General syntax: public static final type name = expression;</li>
+			<ul>
+				<li>Variable names are always in caps</li>
+			</ul>
+		</ul>
+
+		<h2>Different print statements and their outputs</h2>
+		<ul>
+			<li>System.out.print("1+2"+3); // 123</li>
+			<li>System.out.print(1+2+"3"); // 33</li>
+			<li>System.out.print(1+2+3); // 6</li>
+			<li>ASCII a = 97, A = 65</li>
+			<ul>
+				<li>System.out.print('a'); // a</li>
+				<li>System.out.print('a'+2) // 99</li>
+				<li>System.out.print((char)('a' +2)); // c</li>
+			</ul>
+		</ul>
 	</body>
 </html>
