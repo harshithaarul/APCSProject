@@ -14,7 +14,10 @@
 		<ul>
 			<li><a href="http://www.buildingjavaprograms.com/code-files/4ed/DrawingPanel.java">DrawingPanel class link</a></li>
 			<li>Graphics belongs to a package named Abstract Window Toolkit (AWT)</li>
-			<li>Pixel: single small dot on a computer screen</li>
+			<li>Pixel (picture element): single small dot on a computer screen</li>
+			<ul>
+				<li>Each (x, y) position is a pixel</li>
+			</ul>
 			<li>Graphical objects</li>
 			<ul>
 				<li>DrawingPanel: window on the screen</li>
@@ -41,6 +44,40 @@
 				<li>Import declaration: import pacakageName.*;</li>
 				<li>Import declarations must be placed above the line before the public class header</li>
 				<li>Graphics belongs to a package named java.awt</li>
+			</ul>
+			<br>
+			Graphics methods
+				<br>
+				<br>
+				<img src="Graphics Methods.jpg" alt="Useful Methods of Graphics Objects" style="width:600px;height:400px;"><br><br></li>
 		</ul>
+
+		<h2>Coordinate system</h2>
+		<ul>
+			<li>Position (0, 0) is at the window's top-left corner</li>
+			<ul>
+				<li>X increases rightward and y increases downward</li>
+			</ul>
+		</ul>
+
+		<h2>Color</h2>
+		<ul>
+			<li>Declaration</li>
+			<ul>
+				<li>Color <strong>name</strong> = new Color.CONSTANT_NAME or Color(<strong>red</strong>, <strong>green</strong>, <strong>blue</strong>);</li>
+				<li>Predefined Color class constants</li>
+				<br>
+					<img src="Color Constants.jpg" alt="Color Constants" style="width:600px;height:220px;"><br><br>
+			</ul>
+			<li>To draw a colored shape</li>
+			<ol>
+				<li>Set fill colors</li>
+				<li>Fill shape</li>
+				<li>Set outline color</li>
+				<li>Draw the outline</li>
+			</ol>
+			<li>When drawing multiple shapes that occupy the same pixels, the last shape drawn overlaps.</li>
+		</ul>
+		<br>
   </body>
 </html>
