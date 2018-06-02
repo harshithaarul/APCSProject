@@ -25,8 +25,11 @@
 				<li>Auto-initialization: initialization of variables to a default value, such as on an array's elements when it is constructed</li>
 				<li>Each element initially gets a "zero-equivalent" value</li>
 				<li>Array-traversal: processing each array element sequentially from the first to the last</li>
+				<li>Quick array initialization: type[] name = {value, value, value,...value};</li>
 				<ul>
-					<!-- Zero-Equivalent Auto-Initialization Values -->
+					<br>
+					<img src="Zero-Equivalent Values.jpg" alt="Zero-Equivalent Values Chart" style="width:250px;height:200px;">
+					<br><br>
 				</ul>
 			</ul>
 			<li>Accessing elements</li>
@@ -34,6 +37,8 @@
 				<li>General syntax: name[index]</li>
 				<ul>
 					<li>Ex.: numbers[0] = -8;</li>
+					<li>int x = numbers[9];</li>
+					<li>numbers[numbers[4]] = x;</li>
 				</ul>
 				<li>Out-of-bounds</li>
 				<ul>
@@ -43,6 +48,65 @@
 					</ul>
 				</ul>
 			</ul>
+			<li>Sequential access: manipulating values in a sequential manner from first to last</li>
+			<li>Arrays allow random access</li>
+			<ul>
+				<li>Random access: manipulating values in order whatsoever to allow quick access to each value</li>
+			</ul>
+			<li>Limitations of arrays</li>
+			<ul>
+				<li>Cannot resize an existing array</li>
+				<li>Cannot compare arrays with == or equals</li>
+				<li>Does not know how to print itself</li>
+				<ul>
+					<li>Ex.: int[] list = {42, 42, 50, 18, 4};
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(list);
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					This prints [I@98f8c4], which is the array's reference</li>
+				</ul>
+				<li>To print an array use toString method</li>
+			</ul>
+			<li>When you pass an array as a parameter to a void method, the method has the ability to change the array's contents.</li>
+			<br>
+			<img src="Arrays Methods.jpg" alt="Useful Methods for the Arrays Class" style="width:576px;height:304px;">
+			<br><br>
 		</ul>
+
+		<h2>The for-each loop</h2>
+		<ul>
+			<li>General syntax</li>
+			<ul>
+				<li>for (type name : array){
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					statement;
+					<br>
+					statement;
+				<br>
+				}</li>
+				<li>Refer pg457 for examples</li>
+			</ul>
+		</ul>
+
+		<h2>Reference semantics</h2>
+		<ul>
+			<li>Value semantics (value types): behavior where values are copied when assigned, passed as parameters, or returned</li>
+			<li>Reference semantics (reference types): behavior where variables actually store the address of an object in memory</li>
+			<li>Arrays are passed as parameters by reference</li>
+			<li>Null: a Java keyword signifying no object</li>
+		</ul>
+
+		<h2>Multidimensional arrays</h2>
+		<ul>
+			<li>Multidimensional array: an array of arrays, the elements of which are accessed with multiple integer indexes</li>
+			<li>General syntax: type[][]</li>
+			<ul>
+				<li>double[row][column]</li>
+				<li>Ex.: double[][] lists = new double[4][9];</li>
+			</ul>
+		</ul>
+		<br>
   	</body>
 </html>
