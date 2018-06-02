@@ -6,5 +6,43 @@
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 7: Arrays</h1>
+		<br>
+
+		<h2>Array basics</h2>
+		<ul>
+			<li>Array: object that stores many values of the same type</li>
+			<li>Index: 0-based integer to access an element from an array</li>
+			<li>Zero-based indexing: numbering scheme used throughout Java in which a sequence of values is indexed starting with 0</li>
+			<li>Element: one value in an array</li>
+			<li>Constructing an array</li>
+			<ul>
+				<li>General syntax: type[] name = new type[lenght];</li>
+				<ul>
+					<li>Ex.: int[] numbers = new int[10];</li>
+				</ul>
+				<li>Auto-initialization: initialization of variables to a default value, such as on an array's elements when it is constructed</li>
+				<li>Each element initially gets a "zero-equivalent" value</li>
+				<li>Array-traversal: processing each array element sequentially from the first to the last</li>
+				<ul>
+					<!-- Zero-Equivalent Auto-Initialization Values -->
+				</ul>
+			</ul>
+			<li>Accessing elements</li>
+			<ul>
+				<li>General syntax: name[index]</li>
+				<ul>
+					<li>Ex.: numbers[0] = -8;</li>
+				</ul>
+				<li>Out-of-bounds</li>
+				<ul>
+					<li>Legal indexes: between 0 and array's length - 1</li>
+					<ul>
+						<li>Negatives and any number greater than length - 1 are illegal and will throw an exception</li>
+					</ul>
+				</ul>
+			</ul>
+		</ul>
+  	</body>
 </html>
