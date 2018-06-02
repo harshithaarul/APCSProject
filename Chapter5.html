@@ -1,10 +1,73 @@
 <html>
 	<head>
-		<title>Chapter 5: Program Logic an Indefinite Loops</title>
+		<title>Chapter 5: Program Logic and Indefinite Loops</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main2.css" />
 	</head>
 	<body>
-  </body>
+		<br>
+		<h1>Chapter 5: Program Logic and Indefinite Loops</h1>
+		<br>
+
+		<h2>The while loop</h2>
+		<ul>
+			<li>Definite loop: executes known number of times</li>
+			<li>Indefinite loop: number of times its body repeats not known in advance</li>
+			<li>while loop: repeatedly executes its body as long as logical test is true</li>
+			<ul>
+				<li>while loop syntax</li>
+				<ul>
+					<li>while (test){
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statement(s);
+					<br>
+					}</li>
+				</ul>
+			</ul>
+			<li>Pseudorandom numbers: numbers that, although they are derived from predictable and well-defined algorithms, mimic the properties of numbers chosen at random</li>
+				<ul>
+					<li>Ex.: Math.random();</li>
+					<ul>
+						<li>Between 0.0 <= x < 1.0</li>
+					</ul>
+					<li>Ex.: Random class in java.util package</li>
+						<ul>
+							<li>Random r = new Random();</li>
+							<!-- Useful Methods of Random Objects -->
+						</ul>
+				</ul>
+			<li>Priming a loop: initializing variables before a loop to "prime the pump" and guarantee that is entered</li>
+		</ul>
+
+		<h2>Fencepost Algorithms</h2>
+		<ul>
+			<li>Fencepost algorithms: before or after a loop an operation/function is executed</li>
+			<ul>
+				<li>See pg 324</li>
+			</ul>
+			<li>Sentinel: special value that signals end of input</li>
+		</ul>
+
+		<h2>The boolean type</h2>
+		<ul>
+			<!-- Logical operators -->
+			<li>Short-circuited evaluation: property of the logical operators && and || that prevents the second operand from being evaluated if the overall result is obvious from the value of the first operand</li>
+		</ul>
+
+		<h2>User errors</h2>
+		<ul>
+			<li>Robust: ability of a program to execute even when presented with illegal data</li>
+			<ul>
+				<li>Generate an error message when illegal data is present</li>
+			</ul>
+		</ul>
+
+		<h2>Assertions and program logic</h2>
+		<ul>
+			<li>Assertion: declarative sentence that is either true or false</li>
+			<li>provable assertion: assertion that can be proven to be true at a particular point in program execution</li>
+			<li>Formal verification: field of computer science that involves reasoning about formal properties of programs to prove the correctness of a program</li>
+		</ul>
+ 	</body>
 </html>
