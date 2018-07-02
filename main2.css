@@ -1,6 +1,6 @@
 body {
   background-color: #000;
   background-image: url("chapterb.jpg");
-  background-size: contain;
+  background-size: 100%;
 /*   background-position: top center;  */
 }
