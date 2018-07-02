@@ -1,6 +1,6 @@
 body {
   background-color: #000;
   background-image: url("chapterb.jpg");
-  background-size: 1500px 1500px; /* Background changes size based on the size of the file */
+  background-size: auto; /* Background changes size based on the size of the file */
 /*   background-position: top center;  */
 }
