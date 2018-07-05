@@ -1406,7 +1406,7 @@
 	body {
 		background-color: #000;
 		background-image: url("bg.jpg");
-		background-size: cover;
+/* 		background-size: cover; */
 		background-position: top center;
 		background-repeat: no-repeat;
 	}
